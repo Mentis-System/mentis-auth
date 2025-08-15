@@ -1,9 +1,11 @@
 package main
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+)
 
 func TestGetMessage(t *testing.T) {
-	if GetMessage() != "Hello" {
-		t.Errorf("Error Test")
-	}
+	assert.Equal(t, "Hello", GetMessage(), "Error Test")
 }

@@ -7,5 +7,3 @@ func GetMessage() string {
 func main() {
 	println("Hello")
 }
-
-
